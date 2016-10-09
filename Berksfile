@@ -9,3 +9,5 @@ group :test do
   cookbook 'kibana_lwrp', git: 'https://github.com/lusis/chef-kibana.git'
   cookbook 'beaver'
 end
+
+cookbook 'runit', git: "https://github.com/SupersonicAds/runit", branch: 'IRONSRC_RELEASE'
