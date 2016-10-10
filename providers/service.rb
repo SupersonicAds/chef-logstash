@@ -78,6 +78,7 @@ action :enable do
         web_address: svc[:web_address],
         web_port: svc[:web_port]
       )
+      start_down true
       cookbook svc[:templates_cookbook]
       run_template_name svc[:runit_run_template_name]
       log_template_name svc[:runit_log_template_name]
